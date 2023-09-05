@@ -21,24 +21,64 @@
   }
   button{
     height:2rem;
-    width: 6rem;
+    width: 6.4rem;
     color:white;
     background-color:black;
     font-size: 1rem;
     font-weight:300;
     position:absolute;
     right:0px;
+    &:hover{
+      background-color:white;
+      color: black;
+    }
   }
 }
 
 /* Play component styling */
+.playContianer{
+  margin-bottom:1rem;
+}
 .firstSection{
+  margin-top:1rem;
   display:flex;
   justify-content:space-evenly;
   padding-top:2rem;
+  .totalScore{
+    h1{
+      font-size:3rem;
+    }
+    h3{
+      font-size:1.6rem;
+      padding:0.8rem 0;
+    }
+  }
+
+  .numbers{
+    .selectBtn{
+    width:2.5rem;
+    height:2.5rem;
+    margin: 0 5px;
+    font-size:1.5rem;
+    background-color:white;
+    border: 1px solid black;
+    border-radius:4px;
+  }
+
+.selectedBtn{
+  background-color:black;
+  color:white;
+}
+h3{
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+    
+  }
 }
 
 .secondSection{
+  margin:4rem 0;
   height:50vh;
   display:flex;
   justify-content:center;
@@ -47,11 +87,50 @@
 .playBtn{
   display:flex;
   flex-direction:column;
-  gap: 2rem;
-    
+  gap: 1rem;
+  justify-content:center;
+  align-items:center;
+  >button{
+    width:10rem;
+    height:2.2rem;
+    font-size:1.1rem;
+    background-color:white;
+    border:2px solid black;
+    border-radius:10px;
+    color:black;
+    &:hover{
+      background-color:black;
+      color:white;
+    }
+  }
+  .resetBtn{
+    background-color:black;
+    color:white;
+    &:hover{
+      background-color:white;
+      color:black;
+    }
+  }
+  .ruleBtn{
+    &:hover{
+      background-color:skyblue;
+    }
+  }
  
 }
- .selectBtn{
-  width:2rem;
-   margin: 0 5px;
+
+
+/* ruleContianer */
+.ruleContianer{
+  background-color: lightpink;
+  display:flex;
+  flex-direction:column;
+  justify-content:left;
+  padding: 1rem;
+  gap:12px;
+  width:50%;
+  margin:auto;
+  p{
+    font-size:1rem
   }
+}
